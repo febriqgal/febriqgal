@@ -35,11 +35,10 @@ export default function Home() {
       </Head>
       <main className={`${styles.main}`}>
         <div
-          className={`bg-slate-50 w-[500px] text-slate-900 shadow-lg pb-5 px-10 flex flex-col rounded-lg`}
+          className={`bg-slate-50 text-slate-900 shadow-lg pb-5 px-5 pt-5 w-full sm:w-[400px] rounded-lg`}
         >
-          <h1 className="text-center font-bold py-5">My Skill</h1>
           <div
-            className={`bg-[#DFDBE5] shadow-lg w-full py-5 px-10 rounded-lg animate__animated animate__fadeInUp`}
+            className={`bg-[#DFDBE5] shadow-lg py-5 px-5 rounded-lg animate__animated animate__fadeInUp`}
           >
             <div>
               <div className="flex justify-between place-items-center mb-2">
