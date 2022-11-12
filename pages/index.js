@@ -35,79 +35,71 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${styles.bgg}`}>
         <div
-          className={`bg-slate-50 w-[400px] text-slate-900 shadow-lg py-5 px-10 flex flex-col rounded-lg`}
+          className={`bg-slate-50 w-[500px] text-slate-900 shadow-lg pb-5 px-10 flex flex-col rounded-lg`}
         >
-          <div className="flex w-full justify-center items-center mb-2 animate__animated animate__backInLeft">
-            <Image
-              className="duration-1000 h-[80px] w-[80px] rounded-full "
-              src={Febriqgal}
-              alt={"Febriqgal"}
-            />
-            <div className="ml-2">
-              <h1 className="font-bold">Febriqgal</h1>
-              <h1 className="text-justify text-xs">
-                {`"Teknologi informasi tidaklah menjadikan manusia malas, justru
-                membuat karya selalu berlimpah tanpa batas."`}
-              </h1>
-            </div>
-          </div>
-
+          <h1 className="text-center font-bold py-5">My Skill</h1>
           <div
-            className={`bg-[#DFDBE5] shadow-lg w-full pb-5 my-2 px-5 rounded-lg animate__animated animate__fadeInUp`}
+            className={`bg-[#DFDBE5] shadow-lg w-full py-5 px-5 rounded-lg animate__animated animate__fadeInUp`}
           >
-            <h1 className="text-center pt-5 font-semibold underline text-sm">
-              My Skill
-            </h1>
-            <h1 className="text-center py-2 text-sm">Web App Developer</h1>
-            <div className="flex justify-center gap-2 pt-1">
-              <Image title={"HTML5"} src={HTML5} alt={"HTML5"} />
-              <Image title={"CSS3"} src={CSS3} alt={"CSS3"} />
-              <Image title={"Javascript"} src={Javascript} alt={"Javascript"} />
-              <Image
-                title={"TailwindCSS"}
-                src={TailwindCSS}
-                alt={"TailwindCSS"}
-              />
-              <Image title={"NextJS"} src={Nextdotjs} alt={"NextJS"} />
+            <div>
+              <div className="flex justify-between place-items-center mb-2">
+                <h1 className="text-center text-sm">Web App Developer</h1>
+                <div className="flex justify-center gap-2">
+                  <Image title={"HTML5"} src={HTML5} alt={"HTML5"} />
+                  <Image title={"CSS3"} src={CSS3} alt={"CSS3"} />
+                  <Image
+                    title={"Javascript"}
+                    src={Javascript}
+                    alt={"Javascript"}
+                  />
+                  <Image
+                    title={"TailwindCSS"}
+                    src={TailwindCSS}
+                    alt={"TailwindCSS"}
+                  />
+                  <Image title={"NextJS"} src={Nextdotjs} alt={"NextJS"} />
+                </div>
+              </div>
+              <div className="flex justify-between place-items-center mb-2">
+                <h1 className="text-center  text-sm">Mobile App Developer</h1>
+                <div className="flex justify-center  gap-2">
+                  <Image title={"Flutter"} src={Flutter} alt={"Flutter"} />
+                  <Image title={"Dart"} src={Dart} alt={"Dart"} />
+                </div>
+              </div>
+              <div className="flex justify-between place-items-center  mb-2">
+                <h1 className="text-center  text-sm">UI/UX</h1>
+                <div className="flex justify-center  gap-2">
+                  <Image title={"Figma"} src={Figma} alt={"Figma"} />
+                  <Image
+                    title={"Adobe Illustrator"}
+                    src={Adobeillustrator}
+                    alt={"Adobe Illustrator"}
+                  />
+                  <Image
+                    title={"Affinity Designer"}
+                    src={Affinitydesigner}
+                    alt={"Affinity Designer"}
+                  />
+                </div>
+              </div>
+              <div className="flex justify-between place-items-center mb-2">
+                <h1 className="text-center  text-sm">Database</h1>
+                <div className="flex justify-center gap-2">
+                  <Image title={"Firebase"} src={Firebase} alt={"Firebase"} />
+                  <Image title={"MongoDB"} src={MongoDB} alt={"MongoDB"} />
+                </div>
+              </div>
+              <div className="flex justify-between place-items-center">
+                <h1 className="text-center  text-sm">IT Support</h1>
+                <div className="flex justify-center  gap-2">
+                  <Image title={"Windows"} src={Windows} alt={"Windows"} />
+                  <Image title={"Linux"} src={linux} alt={"Linux"} />
+                </div>
+              </div>
             </div>
-            <h1 className="text-center py-2 text-sm mt-2">
-              Mobile App Developer
-            </h1>
-            <div className="flex justify-center  gap-2 pt-1">
-              <Image title={"Flutter"} src={Flutter} alt={"Flutter"} />
-              <Image title={"Dart"} src={Dart} alt={"Dart"} />
-            </div>
-            <h1 className="text-center py-2 text-sm mt-2">UI/UX</h1>
-            <div className="flex justify-center  gap-2 pt-1">
-              <Image title={"Figma"} src={Figma} alt={"Figma"} />
-              <Image
-                title={"Adobe Illustrator"}
-                src={Adobeillustrator}
-                alt={"Adobe Illustrator"}
-              />
-              <Image
-                title={"Affinity Designer"}
-                src={Affinitydesigner}
-                alt={"Affinity Designer"}
-              />
-            </div>
-            <h1 className="text-center py-2 text-sm mt-2">Database</h1>
-            <div className="flex justify-center gap-2 pt-1">
-              <Image title={"Firebase"} src={Firebase} alt={"Firebase"} />
-              <Image title={"MongoDB"} src={MongoDB} alt={"MongoDB"} />
-            </div>
-            <h1 className="text-center py-2 text-sm mt-2">IT Support</h1>
-            <div className="flex justify-center  gap-2 pt-1">
-              <Image title={"Windows"} src={Windows} alt={"Windows"} />
-              <Image title={"Linux"} src={linux} alt={"Linux"} />
-            </div>
-            <Link href={"/project"}>
-              <h1 className="mx-auto w-[100px] mt-5 bg-black text-slate-50 text-center rounded-lg">
-                Project
-              </h1>
-            </Link>
           </div>
-          <div className="flex justify-center gap-4 pt-4">
+          <div className="flex justify-center gap-4 pt-5">
             <Link target={"#"} href={"https://github.com/febriqgal"}>
               <Image
                 className="h-auto"
