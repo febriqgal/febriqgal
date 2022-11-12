@@ -35,8 +35,9 @@ export default function Home() {
       </Head>
       <main className={`${styles.main}`}>
         <div
-          className={`bg-slate-50 text-slate-900 shadow-lg pb-5 px-5 pt-5 w-full sm:w-[400px] rounded-lg`}
+          className={`bg-slate-50 text-slate-900 shadow-lg pb-5 px-3 lg:px-5  w-full lg:w-[400px] rounded-lg`}
         >
+          <h1 className="text-center p-5 font-bold">MY SKILL</h1>
           <div
             className={`bg-[#DFDBE5] shadow-lg py-5 px-5 rounded-lg animate__animated animate__fadeInUp`}
           >
