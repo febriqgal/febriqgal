@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
 import Image from "next/image";
+import 'animate.css';
 import styles from "../styles/Home.module.css";
 import Febriqgal from "../public/febriqgal.jpg";
 import Nextdotjs from "../public/nextdotjs.svg";
@@ -8,7 +9,8 @@ import TailwindCSS from "../public/tailwindcss.svg";
 import Flutter from "../public/flutter.svg";
 import HTML5 from "../public/html5.svg";
 import CSS3 from "../public/css3.svg";
-import Firebase from "../public/firebase.svg";
+import Javascript from "../public/javascript.svg";
+import Dart from "../public/dart.svg";
 
 export default function Home() {
   return (
@@ -21,7 +23,7 @@ export default function Home() {
 
       <main className={`${styles.main} ${styles.bgg}`}>
         <div className="bg-slate-50 text-slate-900 shadow-md py-5 px-10 justify-center items-center flex flex-col rounded-lg">
-          <div className="h-[200px] w-[200px] rounded-full overflow-clip">
+          <div className="h-[200px] w-[200px] rounded-full overflow-clip animate__animated animate__backInDown">
             <Image
               className="hover:scale-105 duration-1000"
               src={Febriqgal}
@@ -29,42 +31,47 @@ export default function Home() {
             />
           </div>
 
-          <h1 className="mt-2 text-lg lg:text-2xl uppercase text-center font-bold hover:underline hover:cursor-pointer">
+          <h1 className="animate__animated animate__backInLeft mt-2 text-lg lg:text-2xl uppercase text-center font-bold hover:underline hover:cursor-pointer">
             Febriqgal Purnama
           </h1>
-          <div className="flex justify-between gap-2 p-4 bg-[#DFDBE5] rounded-lg my-2 w-full">
-            <Image title={"HTML5"} src={HTML5} alt={"HTML5"} />
-            <Image title={"CSS3"} src={CSS3} alt={"CSS3"} />
-            <Image title={"NextJS"} src={Nextdotjs} alt={"NextJS"} />
-            <Image
-              title={"TailwindCSS"}
-              src={TailwindCSS}
-              alt={"TailwindCSS"}
-            />
-            <Image title={"Flutter"} src={Flutter} alt={"Flutter"} />
-            <Image title={"Firebase"} src={Firebase} alt={"Firebase"} />
+          <div className="bg-[#DFDBE5] w-full pb-3 my-2 px-5 rounded-lg animate__animated animate__fadeInUp">
+            <h1 className="text-center py-2 text-sm">My Skill</h1>
+            <div className="flex justify-between gap-2 pt-1">
+              <Image title={"HTML5"} src={HTML5} alt={"HTML5"} />
+              <Image title={"CSS3"} src={CSS3} alt={"CSS3"} />
+              <Image title={"Javascript"} src={Javascript} alt={"Javascript"} />
+              <Image
+                title={"TailwindCSS"}
+                src={TailwindCSS}
+                alt={"TailwindCSS"}
+              />
+              <Image title={"NextJS"} src={Nextdotjs} alt={"NextJS"} />
+
+              <Image title={"Flutter"} src={Flutter} alt={"Flutter"} />
+              <Image title={"Dart"} src={Dart} alt={"Dart"} />
+            </div>
           </div>
-          <button className="hover:bg-slate-700 hover:text-white w-full py-2 rounded-lg">
+          <button className="animate__animated animate__fadeInUp hover:bg-[#DFDBE5] hover:text-white w-full py-2 rounded-lg">
             <a href={"https://github.com/febriqgal"} target={"#"}>
               Github
             </a>
           </button>
-          <button className="hover:bg-slate-700 hover:text-white w-full py-2 rounded-lg">
+          <button className="animate__animated animate__fadeInUp hover:bg-[#DFDBE5] hover:text-white w-full py-2 rounded-lg">
             <a href={"https://www.instagram.com/febriqgal_"} target={"#"}>
               Instagram
             </a>
           </button>
-          <button className="hover:bg-slate-700 hover:text-white w-full py-2 rounded-lg">
+          <button className="animate__animated animate__fadeInUp hover:bg-[#DFDBE5] hover:text-white w-full py-2 rounded-lg">
             <a href={"https://twitter.com/febriqgal_"} target={"#"}>
               Twitter
             </a>
           </button>
-          <button className="hover:bg-slate-700 hover:text-white w-full py-2 rounded-lg">
+          <button className="animate__animated animate__fadeInUp hover:bg-[#DFDBE5] hover:text-white w-full py-2 rounded-lg">
             <a href={"https://www.linkedin.com/in/febriqgal/"} target={"#"}>
               LinkedIn
             </a>
           </button>
-          <button className="hover:bg-slate-700 hover:text-white w-full py-2 rounded-lg">
+          <button className="animate__animated animate__fadeInUp hover:bg-[#DFDBE5] hover:text-white w-full py-2 rounded-lg">
             <a href={"https://www.instagram.com/febproject_/"} target={"#"}>
               Project
             </a>
