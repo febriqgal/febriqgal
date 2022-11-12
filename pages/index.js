@@ -27,7 +27,7 @@ import linux from "../public/linux.svg";
 
 export default function Home() {
   return (
-    <div className={styles.bgg}>
+    <div className={`${styles.bgg}`}>
       <Head>
         <title>Febriqgal Purnama</title>
         <meta name="description" content="Febriqgal" />
@@ -53,9 +53,9 @@ export default function Home() {
           </div>
 
           <div
-            className={`bg-[#DFDBE5] shadow-lg w-full   pb-4 my-2 px-5 rounded-lg animate__animated animate__fadeInUp`}
+            className={`bg-[#DFDBE5] shadow-lg w-full pb-5 my-2 px-5 rounded-lg animate__animated animate__fadeInUp`}
           >
-            <h1 className="text-center pt-2 font-semibold underline text-sm">
+            <h1 className="text-center pt-5 font-semibold underline text-sm">
               My Skill
             </h1>
             <h1 className="text-center py-2 text-sm">Web App Developer</h1>
