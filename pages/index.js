@@ -27,19 +27,19 @@ import linux from "../public/linux.svg";
 
 export default function Home() {
   return (
-    <>
+    <div className={`${styles.bgg}`}>
       <Head>
         <title>Febriqgal Purnama</title>
         <meta name="description" content="Febriqgal" />
         <link rel="icon" href="/icon.png" />
       </Head>
-      <main className={`${styles.main} ${styles.bgg}`}>
+      <main className={`${styles.main}`}>
         <div
           className={`bg-slate-50 w-[500px] text-slate-900 shadow-lg pb-5 px-10 flex flex-col rounded-lg`}
         >
           <h1 className="text-center font-bold py-5">My Skill</h1>
           <div
-            className={`bg-[#DFDBE5] shadow-lg w-full py-5 px-5 rounded-lg animate__animated animate__fadeInUp`}
+            className={`bg-[#DFDBE5] shadow-lg w-full py-5 px-10 rounded-lg animate__animated animate__fadeInUp`}
           >
             <div>
               <div className="flex justify-between place-items-center mb-2">
@@ -146,6 +146,6 @@ export default function Home() {
           <h1>© 2022, Febriqgal.</h1>
         </footer>
       </main>
-    </>
+    </div>
   );
 }
