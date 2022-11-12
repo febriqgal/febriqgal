@@ -35,15 +35,14 @@ export default function Home() {
       </Head>
       <main className={`${styles.main}`}>
         <div className="bg-slate-50 w-[400px] text-slate-900 shadow-lg py-5 px-10 flex flex-col rounded-lg">
-          <div className="flex w-full justify-center items-center mb-2">
+          <div className="flex w-full justify-center items-center mb-2 animate__animated animate__backInLeft">
             <Image
-              className="duration-1000 h-[80px] w-[80px] rounded-full"
+              className="duration-1000 h-[80px] w-[80px] rounded-full "
               src={Febriqgal}
               alt={"Febriqgal"}
             />
             <div className="ml-2">
-               
-              <h1 className="text-justify text-xs animate__animated animate__backInLeft">
+              <h1 className="text-justify text-xs">
                 Teknologi informasi tidaklah menjadikan manusia malas, justru
                 membuat karya selalu berlimpah tanpa batas.
               </h1>
@@ -51,7 +50,9 @@ export default function Home() {
           </div>
 
           <div className="bg-[#DFDBE5] w-full pb-4 my-2 px-5 rounded-lg animate__animated animate__fadeInUp">
-          <h1 className="text-center pt-2 font-semibold underline text-sm">My Skill</h1>
+            <h1 className="text-center pt-2 font-semibold underline text-sm">
+              My Skill
+            </h1>
             <h1 className="text-center py-2 text-sm">Web App Developer</h1>
             <div className="flex justify-center gap-2 pt-1">
               <Image title={"HTML5"} src={HTML5} alt={"HTML5"} />
