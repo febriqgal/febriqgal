@@ -25,7 +25,7 @@ export default function Home() {
             <Image
               className="hover:scale-105 duration-1000"
               src={Febriqgal}
-              alt={"Feriqgal"}
+              alt={"Febriqgal"}
             />
           </div>
 
