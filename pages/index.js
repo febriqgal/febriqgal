@@ -30,11 +30,13 @@ export default function Home() {
     <div className={styles.bgg}>
       <Head>
         <title>Febriqgal Purnama</title>
-        <meta name="description" content="My Bio" />
+        <meta name="description" content="Febriqgal" />
         <link rel="icon" href="/icon.png" />
       </Head>
       <main className={`${styles.main}`}>
-        <div className="bg-slate-50 w-[400px] text-slate-900 shadow-lg py-5 px-10 flex flex-col rounded-lg">
+        <div
+          className={`bg-slate-50 w-[400px] text-slate-900 shadow-lg py-5 px-10 flex flex-col rounded-lg`}
+        >
           <div className="flex w-full justify-center items-center mb-2 animate__animated animate__backInLeft">
             <Image
               className="duration-1000 h-[80px] w-[80px] rounded-full "
@@ -42,14 +44,17 @@ export default function Home() {
               alt={"Febriqgal"}
             />
             <div className="ml-2">
+              <h1 className="font-bold">Febriqgal</h1>
               <h1 className="text-justify text-xs">
-                Teknologi informasi tidaklah menjadikan manusia malas, justru
-                membuat karya selalu berlimpah tanpa batas.
+                {`"Teknologi informasi tidaklah menjadikan manusia malas, justru
+                membuat karya selalu berlimpah tanpa batas."`}
               </h1>
             </div>
           </div>
 
-          <div className="bg-[#DFDBE5] w-full pb-4 my-2 px-5 rounded-lg animate__animated animate__fadeInUp">
+          <div
+            className={`bg-[#DFDBE5] shadow-lg w-full   pb-4 my-2 px-5 rounded-lg animate__animated animate__fadeInUp`}
+          >
             <h1 className="text-center pt-2 font-semibold underline text-sm">
               My Skill
             </h1>
@@ -96,8 +101,13 @@ export default function Home() {
               <Image title={"Windows"} src={Windows} alt={"Windows"} />
               <Image title={"Linux"} src={linux} alt={"Linux"} />
             </div>
+            <Link target={"#"} href={"https://www.instagram.com/febproject_/"}>
+              <h1 className="mx-auto w-[100px] mt-5 bg-black text-slate-50 text-center rounded-lg">
+                Project
+              </h1>
+            </Link>
           </div>
-          <div className="flex justify-center gap-4 pt-2">
+          <div className="flex justify-center gap-4 pt-4">
             <Link target={"#"} href={"https://github.com/febriqgal"}>
               <Image
                 className="h-5"
@@ -141,7 +151,7 @@ export default function Home() {
           </div>
         </div>
         <footer className="text-slate-900  mt-4 text-center text-sm rounded-lg">
-          <h1>© 2022, Febriqgal</h1>
+          <h1>© 2022, Febriqgal.</h1>
         </footer>
       </main>
     </div>
