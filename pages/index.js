@@ -116,7 +116,7 @@ export default function Home() {
                 alt={"Github"}
               />
             </Link>
-            <Link target={"#"} href={"https://github.com/febriqgal"}>
+            <Link target={"#"} href={"https://www.instagram.com/febriqgal_/"}>
               <Image
                 className="h-5"
                 title={"Instagram"}
