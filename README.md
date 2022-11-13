@@ -1,1 +1,0 @@
-Sebuah nama, sebuah cerita.
